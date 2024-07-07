@@ -20,8 +20,8 @@
 </head>
 <body>
 
-        <header>
-            <div class="container-fluid d-flex align-items-center fixed-top p-2">
+        <header class="fixed-top header_one">
+            <div class="container-fluid d-flex align-items-center">
                 <div class="pe-3">
                     <img src="./img/logo.svg">
                 </div>
@@ -50,41 +50,61 @@
         </header>
 
 
-        <main>
-            <aside class="bg-dark position-relative side_bar">
-                <div class="position-absolute bottom-0 start-0">
+        <main class="position-relative">
 
-                    <!-- Top -->
-                    <div>
-                        <div class="d-flex">
-                            <div>
-                                <i class="fa-solid fa-house"></i>
-                            </div>
-                            <div>
+            <!-- Sidebar -->
+            <aside class="bg-dark position-fixed bottom-0 start-0 side_bar ">
+
+                <!-- Top Sidebar -->
+                <div class="text-white flex-grow-1 p-3">
+                    <div class="d-flex pb-1">
+                        <a href="#" class="link-underline link-underline-opacity-0 sidebar_link">
+                            <i class="fa-solid fa-house"></i>
+                            <span>
                                 Home
-                            </div>
-                        </div>
-                        
-                        <div class="d-flex">
-                            <div>
-                                <i class="fa-solid fa-chart-simple"></i>
-                            </div>
-                            <div>
+                            </span>
+                        </a>    
+                    </div>
+                    
+                    <div class="d-flex pb-1">
+                        <a href="#" class="link-underline link-underline-opacity-0 sidebar_link">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <span>
                                 Stats
-                            </div>
-                        </div>
+                            </span>
+                        </a>
+                    </div>
 
-                        <div class="d-flex">
-                            <div>
-                                <i class="fa-solid fa-signal"></i>
-                            </div>
-                            <div>
+                    <div class="d-flex pb-1">
+                        <a href="#" class="link-underline link-underline-opacity-0 sidebar_link">
+                            <i class="fa-solid fa-signal"></i>
+                            <span>
                                 Signals
-                            </div>
-                        </div>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bottom Sidebar-->
+                <div class="text-white position-absolute bottom-0 start-0 p-3">
+                    <div class="d-flex">
+                        <a href="#" class="link-underline link-underline-opacity-0 sidebar_link">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>
+                                Admin
+                            </span>
+                        </a> 
                     </div>
                 </div>
             </aside>
+
+            <!-- Header Main -->
+             <header class="header_main main_scroll">
+                
+             </header>
+             <div>
+
+             </div>
         </main>
 
 

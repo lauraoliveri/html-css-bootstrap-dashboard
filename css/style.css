@@ -1,18 +1,42 @@
+/* Colors */
+
+
+
 /* STYLE */
 
-header {
-    height: 30px;
+.header_one {
+    height: 60px;
     background-color: white;
     padding: 10px;
 }
 
 .side_bar {
     width: 150px;
-    height: calc(100vh - 30px);
+    height: calc(100vh - 60px);
     background-image: url(../img/sidebar-bg.png);
     background-size: cover;
+    opacity: 95%;
 }
 
 main {
     padding-top: 30px;
+    height: calc(100vh - 30px);
+}
+
+.sidebar_link {
+    color: white;
+}
+
+.sidebar_link:hover {
+    opacity: 75%;
+}
+
+.sidebar_link span {
+    padding-left: 5px;
+}
+
+/* Main scroll */
+
+.main_scroll {
+    width: calc(100 - 150px);
 }
