@@ -116,102 +116,20 @@
                                 </div> 
                             </a>
                         </div>
+                        
 
                         <div class="col-lg-3 d-flex">
                           Studenti online negli ultimi 30 minuti
                         </div>
 
                         <div class="col-lg-3 d-flex align-items-center">
-                            <a href="#" class="link-underline link-underline-opacity-0 new_student_add">
-                                <span class="pe-2">
-                                    Nuovo Studente
-                                </span>
-                                <!-- Button New Student -->
-                                <button class="btn btn-primary fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                                    <i class="bi bi-plus-square"></i> 
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-
-                    
-                    
-                    <!-- Form new student Offcanvas -->
-                    <div class="offcanvas offcanvas-end" style="width: 500px;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <form>
-                                <div class="row g-3">
-
-                                <!-- Name -->
-                                <div class="col">
-                                    <label for="Name" class="form-label">Nome</label>
-                                    <input type="text" class="form-control" id="Name">
-                                </div>
-
-                                <!-- Surname -->
-                                <div class="col">
-                                    <label for="Cognome" class="form-label">Cognome</label>
-                                    <input type="text" class="form-control" id="Cognome">
-                                </div>
-
-                                <!-- Nickname -->
-                                <div>
-                                    <label for="Nickname" class="form-label">Nickname</label>
-                                    <input type="text" class="form-control" id="Nickname">
-                                </div>
-
-                                 <!-- Pronouns -->
-                                <div class="col">
-                                    <select class="form-select mb-3" aria-label="Default select example">
-                                        <option selected>Pronouns</option>
-                                        <option value="3">Any</option>
-                                        <option value="1">She/her</option>
-                                        <option value="2">He/His</option>
-                                        <option value="3">She/He</option>
-                                        <option value="3">They/Them</option>
-                                        <option value="3">Prefer not to say</option>
-                                    </select>
-                                </div>
-                                
-                                <!-- Email -->
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon1">@</span>
-                                    <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
-                                </div>
-
-                               
-
-                                <!-- Foto -->
-                                <div>
-                                    <div class="input-group mb-3">
-                                        <label class="input-group-text" for="inputGroupFile01">Scegli File</label>
-                                        <input type="file" class="form-control" id="inputGroupFile01">
-                                      </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                      <label class="form-check-label" for="invalidCheck">
-                                        Agree to terms and conditions
-                                      </label>
-                                      <div class="invalid-feedback">
-                                        Seleziona per proseguire
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-12">
-                                    <button class="btn btn-primary" type="submit">Salva</button>
-                                    <button type="button" class="btn btn-warning">Svuota</button>
-                                  </div>
-                                
-                            </div>
-                            </form>
-                            
+                            <span class="pe-2 fs-5">
+                                Nuovo Studente
+                            </span>
+                            <!-- Button New Student -->
+                            <button class="btn btn-primary fs-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <i class="bi bi-plus-square"></i> 
+                            </button>
                         </div>
                     </div>
 
@@ -246,11 +164,88 @@
                         <div class="col-lg-3 fs-5 d-flex fw-semibold">
                           125
                         </div>
-
-                        <div class="col">
+                    </div>
+                    
+                    <!-- Form new student Offcanvas -->
+                    <div class="offcanvas offcanvas-end" style="width: 500px;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
+                        <div class="offcanvas-body">
+                            <form>
+                                <div class="row g-3">
 
-                      </div>
+                                    <!-- Name -->
+                                    <div class="col">
+                                        <label for="Name" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="Name">
+                                    </div>
+
+                                    <!-- Surname -->
+                                    <div class="col">
+                                        <label for="Cognome" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" id="Cognome">
+                                    </div>
+
+                                    <!-- Nickname -->
+                                    <div>
+                                        <label for="Nickname" class="form-label">Nickname</label>
+                                        <input type="text" class="form-control" id="Nickname">
+                                    </div>
+
+                                    <!-- Pronouns -->
+                                    <div class="col">
+                                        <select class="form-select mb-3" aria-label="Default select example">
+                                            <option selected>Pronouns</option>
+                                            <option value="3">Any</option>
+                                            <option value="1">She/her</option>
+                                            <option value="2">He/His</option>
+                                            <option value="3">She/He</option>
+                                            <option value="3">They/Them</option>
+                                            <option value="3">Prefer not to say</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <!-- Email -->
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                        <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+
+                                
+
+                                    <!-- Foto -->
+                                    <div>
+                                        <div class="input-group mb-3">
+                                            <label class="input-group-text" for="inputGroupFile01">Scegli File</label>
+                                            <input type="file" class="form-control" id="inputGroupFile01">
+                                        </div>
+                                    </div>
+
+                                        <!-- Select to continue -->
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                            Agree to terms and conditions
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            Seleziona per proseguire
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Save and Delete Button -->
+                                    <div class="col-12">
+                                        <button class="btn btn-primary" type="submit">Salva</button>
+                                        <button type="button" class="btn btn-warning">Svuota</button>
+                                    </div>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
                 </header>
 
                  <!-- Main column left and right -->
