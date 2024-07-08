@@ -10,15 +10,17 @@
     padding: 10px;
 }
 
+main {
+    margin-top: 60px;
+}
+
+/* Sidebar */
+
 .side_bar {
     width: 130px;
     height: calc(100vh - 60px);
     background-image: url(../img/sidebar-bg.png);
     background-size: cover;
-}
-
-main {
-    margin-top: 60px;
 }
 
 .sidebar_link {
@@ -51,6 +53,7 @@ main {
 .header_main a:hover {
     opacity: 80%;
 }
+
 .font_text_smaller {
     font-size: small;
 }
@@ -62,6 +65,7 @@ main {
     border-radius: 20px;
 }
 
+/* Cards */
 .smaller_name {
     font-size: smaller;
 }
@@ -74,11 +78,34 @@ main {
 .done_tag {
     font-size: x-small;
     text-transform: uppercase;
+    padding: 2px;
     width: 50px;
     text-align: center;
     color: white;
     background-color: green;
     border-radius: 20px;
+}
+
+.process_tag {
+    font-size: x-small;
+    text-transform: uppercase;
+    padding: 2px;
+    width: 50px;
+    text-align: center;
+    color: white;
+    background-color: #FFC109;
+    border-radius: 20px;
+}
+
+.failed_tag {
+    font-size: x-small;
+    text-transform: uppercase;
+    padding: 2px;
+    width: 50px;
+    text-align: center;
+    color: white;
+    background-color: red;
+    border-radius: 20px; 
 }
 
 .icons_edit {

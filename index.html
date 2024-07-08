@@ -102,7 +102,7 @@
             <div class="main_scroll">
 
                 <!-- Header main -->
-                <header class="header_main p-3">
+                <header class="header_main p-3 ps-4">
                     <div class="row font_text_smaller d-flex align-items-center">
 
                         <div class="col-lg-6 d-flex align-items-center">
@@ -122,14 +122,96 @@
                         </div>
 
                         <div class="col-lg-3 d-flex align-items-center">
-                            <a href="#" class="link-underline link-underline-opacity-0">
+                            <a href="#" class="link-underline link-underline-opacity-0 new_student_add">
                                 <span class="pe-2">
                                     Nuovo Studente
-                                </span> 
-                                <span class="fs-5">
-                                    <i class="bi bi-plus-square"></i>  
                                 </span>
+                                <!-- Button New Student -->
+                                <button class="btn btn-primary fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                    <i class="bi bi-plus-square"></i> 
+                                </button>
                             </a>
+                        </div>
+                    </div>
+
+                    
+                    
+                    <!-- Form new student Offcanvas -->
+                    <div class="offcanvas offcanvas-end" style="width: 500px;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <form>
+                                <div class="row g-3">
+
+                                <!-- Name -->
+                                <div class="col">
+                                    <label for="Name" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="Name">
+                                </div>
+
+                                <!-- Surname -->
+                                <div class="col">
+                                    <label for="Cognome" class="form-label">Cognome</label>
+                                    <input type="text" class="form-control" id="Cognome">
+                                </div>
+
+                                <!-- Nickname -->
+                                <div>
+                                    <label for="Nickname" class="form-label">Nickname</label>
+                                    <input type="text" class="form-control" id="Nickname">
+                                </div>
+
+                                 <!-- Pronouns -->
+                                <div class="col">
+                                    <select class="form-select mb-3" aria-label="Default select example">
+                                        <option selected>Pronouns</option>
+                                        <option value="3">Any</option>
+                                        <option value="1">She/her</option>
+                                        <option value="2">He/His</option>
+                                        <option value="3">She/He</option>
+                                        <option value="3">They/Them</option>
+                                        <option value="3">Prefer not to say</option>
+                                    </select>
+                                </div>
+                                
+                                <!-- Email -->
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                    <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+
+                               
+
+                                <!-- Foto -->
+                                <div>
+                                    <div class="input-group mb-3">
+                                        <label class="input-group-text" for="inputGroupFile01">Scegli File</label>
+                                        <input type="file" class="form-control" id="inputGroupFile01">
+                                      </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                      <label class="form-check-label" for="invalidCheck">
+                                        Agree to terms and conditions
+                                      </label>
+                                      <div class="invalid-feedback">
+                                        Seleziona per proseguire
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-12">
+                                    <button class="btn btn-primary" type="submit">Salva</button>
+                                    <button type="button" class="btn btn-warning">Svuota</button>
+                                  </div>
+                                
+                            </div>
+                            </form>
+                            
                         </div>
                     </div>
 
@@ -177,12 +259,12 @@
                         <div class="col-lg-8">
 
                             <!-- Container one -->
-                            <div class="m-2">
+                            <div class="m-3">
 
                                 <!-- Card Class -->
                                 <div class="card">
                                     <div class="card-header">
-                                      <h5>
+                                      <h5 class="fw-semibold">
                                         Prossime Classi
                                       </h5>
                                     </div>
@@ -265,8 +347,8 @@
                                             <td>15 February 2024</td>
                                             <td>20%</td>
                                             <td>
-                                                <div class="done_tag">
-                                                    Done
+                                                <div class="process_tag">
+                                                    process
                                                 </div>
                                             </td>
                                             <td class="d-flex align-items-center">
@@ -315,8 +397,8 @@
                                             <td>15 February 2024</td>
                                             <td>20%</td>
                                             <td>
-                                                <div class="done_tag">
-                                                    Done
+                                                <div class="failed_tag">
+                                                    failed
                                                 </div>
                                             </td>
                                             <td class="d-flex align-items-center">
@@ -340,8 +422,8 @@
                                             <td>15 February 2024</td>
                                             <td>20%</td>
                                             <td>
-                                                <div class="done_tag">
-                                                    Done
+                                                <div class="failed_tag">
+                                                    failed
                                                 </div>
                                             </td>
                                             <td class="d-flex align-items-center">
@@ -410,7 +492,7 @@
 
 
                             <!-- Card F.A.Q -->
-                            <div class="card m-2">
+                            <div class="card m-3">
                                 <div class="card-header">
                                   <h5 class="fw-semibold">
                                     F.A.Q
@@ -454,7 +536,9 @@
 
                         <!-- Right Side -->
                         <div class="col">
-                            <div class="card m-2">
+
+                            <!-- Card ToDo -->
+                            <div class="card m-3">
                                 <div class="card-header">
                                   <h5 class="fw-semibold">
                                     To Do
@@ -477,7 +561,29 @@
                                         </li>
                                     </ul>
                                 </div>
+                            </div>
+
+                            <!-- Card Stats -->
+                            <div class="card m-3">
+                                <div class="card m-3 font_text_smaller">
+                                    <img src="./img/stats.jpeg" class="card-img-top">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Utenti attivi</h5>
+                                      <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                      <li class="list-group-item">Gennaio: 1200</li>
+                                      <li class="list-group-item">Febbraio: 1098</li>
+                                      <li class="list-group-item">Marzo: 1347</li>
+                                    </ul>
+                                    <div class="card-body">
+                                      <a href="#" class="card-link">Visualizza report approfondito</a>
+                                    </div>
+                                  </div>
                               </div>
+
+
+
                         </div>
                     </div>
                 </div>
