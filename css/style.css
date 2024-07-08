@@ -71,6 +71,16 @@ main {
     border-radius: 50px;
 }
 
+.done_tag {
+    font-size: x-small;
+    text-transform: uppercase;
+    width: 50px;
+    text-align: center;
+    color: white;
+    background-color: green;
+    border-radius: 20px;
+}
+
 .icons_edit {
     width: 25px;
     height: 25px;
