@@ -35,6 +35,10 @@ main {
     padding-left: 5px;
 }
 
+.logo-mb {
+    display: none;
+}
+
 /* Main scroll */
 
 .main_scroll {
@@ -63,6 +67,10 @@ main {
     padding: 1px 10px;
     background-color: rgba(0, 0, 0, 0.361);
     border-radius: 20px;
+}
+
+.plus {
+    display: none;
 }
 
 /* Cards */
@@ -114,4 +122,71 @@ main {
     color: rgb(99, 99, 99);
     border-color:rgb(99, 99, 99);
     padding: 0!important;
+}
+
+
+
+@media screen and (max-width:768px)  {
+    
+    .disappeared-icons, .disappeared-text {
+        display: none;
+    }
+
+    .side_bar {
+        width: 60px;
+    }
+
+    .main_scroll {
+        margin-left: 60px;
+    }
+
+    .plus {
+        display: inline-block;
+    }
+
+    .logo-pc {
+        display: none;
+    }
+
+    .logo-mb {
+        display: inline-block;
+    }
+
+    .logo-mb img{
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .disappeared-icons, .disappeared-text {
+        display: none;
+    }
+
+    .side_bar {
+        width: 60px;
+    }
+
+    .main_scroll {
+        margin-left: 60px;
+    }
+
+    .disappeared-table-row {
+        display: none;
+    }
+
+    .plus {
+        display: block;
+    }
+
+    .logo-pc {
+        display: none;
+    }
+
+    .logo-mb {
+        display: block;
+    }
+
+    .logo-mb img{
+        width: 40px;
+    }
 }
